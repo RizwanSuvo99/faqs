@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #7a8bd1;
+  color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 500px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fefdf9;
+  border-radius: 4px;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.faq {
+  width: 600px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  background: #334fba;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.icon{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+.faq-answer p {
+  font-size: 18px;
+  padding: 10px 15px 0 15px;
+}
+
+.faq.active .faq-answer {
+    height: 80px;
+}
+
+.faq.active .icon{
+    transform: rotate(180deg);
+}
+
+.icon{
+    transition: transform .5s ease-in-out;
+}
